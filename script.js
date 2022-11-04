@@ -1,5 +1,4 @@
-// const risk = 0.5;
-// const capital = 10000;
+// variable
 
 let pip5;
 let pip10;
@@ -12,6 +11,8 @@ let pip40;
 
 let risk;
 let capital;
+
+// risk input & risk capital
 
 addEventListener("submit", (event) => {
   event.preventDefault;
@@ -26,9 +27,9 @@ addEventListener("submit", (event) => {
 risk = localStorage.getItem("risk");
 capital = localStorage.getItem("capital");
 
-console.log(risk);
+// Risk % to Risk $
 
-let riskValue = (risk / 100) * capital; // Risk % to Risk $
+let riskValue = (risk / 100) * capital;
 
 // Calculate lot Size
 
@@ -40,6 +41,8 @@ pip25 = Math.round((riskValue / 250) * 100) / 100;
 pip30 = Math.round((riskValue / 300) * 100) / 100;
 pip35 = Math.round((riskValue / 350) * 100) / 100;
 pip40 = Math.round((riskValue / 4000) * 100) / 100;
+
+// Output to DOM
 
 document.getElementById("capitalOutput").innerHTML = capital;
 document.getElementById("riskOutput").innerHTML = risk;
