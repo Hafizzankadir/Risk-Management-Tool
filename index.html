@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Risk Table</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <h1><a>DevsTrade</a> Risk Table</h1>
+    <!-- Input Form -->
+
+    <div class="form">
+
+      <form id="risk-input">
+
+        <input type="text" name="capital" id="capital" placeholder="Capital in $">
+        <input type="text" name="risk" id="risk" placeholder="Risk %">
+        <button type="submit">Calculate</button>
+
+      </form>
+
+    </div>
+
+    <!-- Out Put Table -->
+
+    <div class="risk-table">
+
+      <table>
+
+        <tr>
+          <th>Capital :</th>
+          <td>$ <span id="capitalOutput"></span></td>
+          <th>Risk :</th>
+          <td><span id="riskOutput"></span> %</td>
+        </tr>
+        <tr>
+          <th colspan="2" class="header">Pips</th>
+          <th colspan="2" class="header">Lot</th>
+        </tr>
+        <tr>
+          <th colspan="2">5 Pips</th>
+          <td colspan="2" id="pip5"></td>
+        </tr>
+        <tr>
+          <th colspan="2">10 Pips</th>
+          <td colspan="2" id="pip10"></td>
+        </tr>
+        <tr>
+          <th colspan="2">15 Pips</th>
+          <td colspan="2" id="pip15"></td>
+        </tr>
+        <tr>
+          <th colspan="2">20 Pips</th>
+          <td colspan="2" id="pip20"></td>
+        </tr>
+        <tr>
+          <th colspan="2">25 Pips</th>
+          <td colspan="2" id="pip25"></td>
+        </tr>
+        <tr>
+          <th colspan="2">30 Pips</th>
+          <td colspan="2" id="pip30"></td>
+        </tr>
+        <tr>
+          <th colspan="2">35 Pips</th>
+          <td colspan="2" id="pip35"></td>
+        </tr>
+        <tr>
+          <th colspan="2">40 Pips</th>
+          <td colspan="2" id="pip40"></td>
+        </tr>
+
+
+      </table>
+
+
+
+    </div>
+
+
+
+
+  </div>
+
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
