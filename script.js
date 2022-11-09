@@ -40,7 +40,7 @@ pip20 = Math.round((riskValue / 200) * 100) / 100;
 pip25 = Math.round((riskValue / 250) * 100) / 100;
 pip30 = Math.round((riskValue / 300) * 100) / 100;
 pip35 = Math.round((riskValue / 350) * 100) / 100;
-pip40 = Math.round((riskValue / 4000) * 100) / 100;
+pip40 = Math.round((riskValue / 400) * 100) / 100;
 
 // Output to DOM
 
